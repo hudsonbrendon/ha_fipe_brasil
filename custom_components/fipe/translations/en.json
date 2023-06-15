@@ -1,0 +1,18 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Enter your movie theater information:",
+                "data": {
+                    "city_id": "City ID",
+                    "city_name": "City name",
+                    "partnership": "Partnership"
+                }
+            }
+        },
+        "error": {
+            "city_id_error": "City ID invalid",
+            "partnership_error": "Partnership invalid"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "fipe",
+  "name": "Tabela FIPE Brasil",
+  "version": "0.1.0",
+  "documentation": "https://github.com/hudsonbrendon/ha_fipe_brasil#readme",
+  "issue_tracker": "https://github.com/hudsonbrendon/ha_fipe_brasil/issues",
+  "dependencies": [],
+  "codeowners": ["@hudsonbrendon"],
+  "requirements": [],
+  "iot_class": "cloud_polling",
+  "config_flow": true
+}

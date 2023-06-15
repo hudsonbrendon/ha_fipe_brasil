@@ -1,0 +1,18 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Informe os dados do cinema:",
+                "data": {
+                    "city_id": "ID da cidade",
+                    "city_name": "Nome da cidade",
+                    "partnership": "Cinema"
+                }
+            }
+        },
+        "error": {
+            "city_id_error": "ID da cidade inválido",
+            "partnership_error": "Cinema inválido"
+        }
+    }
+}
