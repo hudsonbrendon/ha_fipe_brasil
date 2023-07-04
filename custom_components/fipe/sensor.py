@@ -106,7 +106,7 @@ class FIPESensor(Entity):
     def extra_state_attributes(self) -> dict:
         """Attributes."""
         return {
-            "data": self.prices,
+            "data": {"data": self.prices},
         }
 
     def update(self) -> None:
