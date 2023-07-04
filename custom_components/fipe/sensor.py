@@ -69,8 +69,8 @@ class FIPESensor(Entity):
                 "title_default": "$modelo",
                 "line1_default": "$valor",
                 "line2_default": "$marca",
-                "line3_default": "$anoModelo",
-                "line4_default": "$codigoFipe",
+                "line3_default": "$ultimaAtualizacao",
+                "line4_default": "$anoModelo",
                 "icon": "mdi:arrow-down-bold",
             }
         ]
@@ -87,7 +87,7 @@ class FIPESensor(Entity):
     @property
     def name(self) -> str:
         """Name."""
-        return f"{self.codigo_fipe}"
+        return f"{self.modelo}"
 
     @property
     def state(self) -> str:
@@ -139,7 +139,7 @@ class FIPESensor(Entity):
                 [
                     dict(
                         modelo=price.get("modelo", "Não informado"),
-                        poster="https://p2.trrsf.com/image/fget/cf/1200/675/middle/images.terra.com/2022/12/26/tesla-model-y-1-1ib601ebc6btv.jpeg",
+                        poster="https://img.freepik.com/vetores-gratis/carro-sedan-azul-em-estilo-cartoon-isolado-no-branco_1308-57498.jpg",
                         valor=price.get("valor", "Não informado"),
                         marca=price.get("marca", "Não informado"),
                         anoModelo=price.get("anoModelo", "Não informado"),
@@ -149,6 +149,7 @@ class FIPESensor(Entity):
                         tipoVeiculo=price.get("tipoVeiculo", "Não informado"),
                         siglaCombustivel=price.get("siglaCombustivel", "Não informado"),
                         dataConsulta=price.get("dataConsulta", "Não informado"),
+                        ultimaAtualizacao=self.last_updated,
                     )
                     for price in prices.json()
                 ]

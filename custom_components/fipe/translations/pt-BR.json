@@ -2,17 +2,16 @@
     "config": {
         "step": {
             "user": {
-                "description": "Informe os dados do cinema:",
+                "description": "Informe os dados do automóvel:",
                 "data": {
-                    "city_id": "ID da cidade",
-                    "city_name": "Nome da cidade",
-                    "partnership": "Cinema"
+                    "modelo": "Modelo",
+                    "codigo_fipe": "Código FIPE"
                 }
             }
         },
         "error": {
-            "city_id_error": "ID da cidade inválido",
-            "partnership_error": "Cinema inválido"
+            "modelo_error": "Modelo inválido ",
+            "codigo_fipe_error": "Código FIPE inválido"
         }
     }
 }
