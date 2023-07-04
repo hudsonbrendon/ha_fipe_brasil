@@ -64,16 +64,7 @@ class FIPESensor(Entity):
         self._codigo_fipe = codigo_fipe
         self.session = session
         self._modelo = modelo.capitalize()
-        self._prices = [
-            {
-                "title_default": "$modelo",
-                "line1_default": "$valor",
-                "line2_default": "$marca",
-                "line3_default": "$ultimaAtualizacao",
-                "line4_default": "$anoModelo",
-                "icon": "mdi:arrow-down-bold",
-            }
-        ]
+        self._prices = []
         self._last_updated = const.STATE_UNKNOWN
 
     @property
@@ -139,7 +130,6 @@ class FIPESensor(Entity):
                 [
                     dict(
                         modelo=price.get("modelo", "Não informado"),
-                        poster="https://img.freepik.com/vetores-gratis/carro-sedan-azul-em-estilo-cartoon-isolado-no-branco_1308-57498.jpg",
                         valor=price.get("valor", "Não informado"),
                         marca=price.get("marca", "Não informado"),
                         anoModelo=price.get("anoModelo", "Não informado"),
@@ -149,7 +139,6 @@ class FIPESensor(Entity):
                         tipoVeiculo=price.get("tipoVeiculo", "Não informado"),
                         siglaCombustivel=price.get("siglaCombustivel", "Não informado"),
                         dataConsulta=price.get("dataConsulta", "Não informado"),
-                        ultimaAtualizacao=self.last_updated,
                     )
                     for price in prices.json()
                 ]
