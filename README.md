@@ -17,7 +17,7 @@ Um componente customizado para ter acesso aos dados da tabela FIPE diretamente n
 
 Tenha o HACS instalado, isso permitirá que você atualize facilmente.
 
-Adicionar Ingresso ao HACS pode ser usando este botão:
+Adicionar Tabela FIPE Brasil ao HACS pode ser usando este botão:
 
 [![image](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=hudsonbrendon&repository=ha_fipe_brasil&category=integration)
 
@@ -33,7 +33,7 @@ Caso o botão acima não funcione, adicione `https://github.com/hudsonbrendon/ha
 
 ## Configuração
 
-Adicionar o Ingresso à sua instância do Home Assistant pode ser feito por meio da interface do usuário usando este botão:
+Adicionar o Tabela FIPE Brasil à sua instância do Home Assistant pode ser feito por meio da interface do usuário usando este botão:
 
 [![image](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=fipe)
 
