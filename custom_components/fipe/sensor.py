@@ -126,6 +126,7 @@ class FIPESensor(Entity):
         prices = http.get(url, headers={"User-Agent": "Mozilla/5.0"})
 
         if prices.ok:
+            self._prices.clear()
             self._prices.extend(
                 [
                     dict(

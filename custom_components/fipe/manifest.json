@@ -1,7 +1,7 @@
 {
   "domain": "fipe",
   "name": "Tabela FIPE Brasil",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "documentation": "https://github.com/hudsonbrendon/ha_fipe_brasil#readme",
   "issue_tracker": "https://github.com/hudsonbrendon/ha_fipe_brasil/issues",
   "dependencies": [],
